@@ -1,0 +1,81 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+th,
+td {
+    padding: 12px 15px;
+
+    border: 2px solid #2c3e50;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #4c6d8e; /* Orange theme for header */
+    border-collapse: collapse;
+    color: white;
+    font-weight: bold;
+}
+tr {
+    border-color: #2c3e50;
+}
+tr:hover {
+    background-color: #fff3e0; /* Light orange hover effect */
+}
+.price {
+    color: #2c3e50;
+    font-weight: bold;
+}
+.action-buttons a {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+.btn-show {
+    background-color: #c96932; /* Orange for Show button */
+    color: white;
+    text-decoration: none;
+}
+.btn-show:hover {
+    background-color: #ffffff; /* Darker orange on hover */
+    color: #7c2d00;
+}
+.btn-update {
+    background-color: #027a1c; /* Lighter orange for Update button */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.btn-update:hover {
+    background-color: #ffffff; /* Slightly darker orange on hover */
+    color: #02407a;
+}
+.btn-delete {
+    background-color: #d84315; /* Deep orange for Delete button */
+    color: white;
+    text-decoration: none;
+}
+.btn-delete:hover {
+    background-color: #ffffff; /* Darker deep orange on hover */
+    color: #d84315;
+}
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+    th,
+    td {
+        padding: 8px;
+    }
+    .action-buttons button {
+        padding: 4px 8px;
+        font-size: 12px;
+        margin: 2px;
+    }
+}

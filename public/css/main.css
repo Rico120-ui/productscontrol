@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all cubic-bezier(0.67, 1.02, 0.27, -0.5) 500ms;
+}
+.success {
+    color: white;
+    background-color: green;
+    padding: 8px;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    margin-bottom: 15px;
+}
+.error {
+    color: white;
+    background-color: red;
+    padding: 8px;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    margin-bottom: 15px;
+}
+#content {
+    padding: 20px;
+}
+body {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 21px;
+    padding: 10px;
+}
+#right #toolbar {
+    background-color: white;
+    height: 60px;
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#toolbar a {
+    padding: 8px 12px;
+    background-color: rgb(29, 86, 241);
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+#toolbar a:hover {
+    background-color: rgb(109, 133, 255);
+    color: black;
+}
+#wrapper {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#left {
+    width: 20%;
+    min-height: 700px;
+    background-color: #03355e;
+    text-align: center;
+    padding: 20px 5px;
+}
+#left h1 {
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+}
+#left nav {
+    margin-top: 17px;
+}
+#left nav ul {
+    align-items: baseline;
+}
+#left nav ul li {
+    list-style-type: none;
+    color: white;
+}
+#left nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 0 10px;
+}
+#left nav ul li a::before {
+    transition: all ease-in-out 300ms;
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+}
+#left nav ul li:hover a::before {
+    width: 100%;
+}
+#left nav ul li a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    text-decoration: underline;
+}
+#left .box,
+#right .box {
+    background-color: #ffdaa9;
+    padding: 5px;
+    margin-top: 20px;
+}
+#left .box h2,
+#right .box h2 {
+    background-color: #935121;
+    color: yellow;
+    text-align: center;
+    font: bold 15px sans-serif;
+    padding: 8px;
+}
+#left .box ul,
+#right .box ul {
+    margin-top: 5px;
+    background-color: #03355e;
+    padding: 5px;
+}
+#left .box ul li,
+#right .box ul li {
+    list-style-type: none;
+    border-bottom: 5px solid #f6a262;
+}
+#left .box ul li:last-child,
+#right .box ul li:last-child {
+    border-bottom: 0;
+}
+#left .box ul li a,
+#right .box ul li a {
+    background-color: #ffb74e;
+    text-decoration: none;
+    color: brown;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    text-align: left;
+}
+#left .box ul li a:hover,
+#right .box ul li a:hover {
+    background-color: #ffc571;
+    color: black;
+    padding-left: 30px;
+}
+#right {
+    width: 100%;
+    min-height: 400px;
+    background-color: #eae7e7;
+}
+#right #rightHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-image: linear-gradient(to top, #03355e);
+}
+#right #rightHeader .links {
+    display: flex;
+    padding: 35px 16px 16px 16px;
+    justify-content: space-between;
+    background-color: #d38448;
+}
+#right #rightHeader h1 {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+#right #toolbar {
+    background-color: white;
+    height: 40px;
+}
