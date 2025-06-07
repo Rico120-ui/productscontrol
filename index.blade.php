@@ -5,7 +5,6 @@
 {{-- <a href="/">Home</a><br>
 <a href="/aboutus">about</a></a><br>
 <a href="/contact">contact</a><br> --}}
-
 {{-- <a href="{{ route('homepage')}}">Home</a><br>
 <a href="{{ route('aboutpage')}}">about us</a><br>
 <a href="{{ route('contactpage')}}">contact us</a><br> --}}
